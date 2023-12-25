@@ -49,20 +49,20 @@
         // Số nguyên tố > 1
         if (number < 2) {
             huy = false;
+            document.write(number + " không là số nguyên tố")
         }
         // Số lớn > 1
         else {
             for (var i = 2; i <= number - 1; i++) {
-                if (number % i == 0) {
+                if (number % i == 0) { //nếu số đó chia hết cho 2 thì sai. kết thúc!
                     huy = false;
+                    document.write(number + " không là số nguyên tố")
                     break;
                 }
             }
         }
-        if(huy == true){
+        if (huy == true) {
             document.write(number + " là số nguyên tố")
-        }else{
-            document.write(number + " không là số nguyên tố")  
         }
     </script>
 </body>
