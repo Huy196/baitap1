@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // MẢNG 1 CHIỀU    
+
+        // var array = ["item1","item2","item3"];
+        // for(let i =0;i < array.length;i++){
+        //     document.write(array[i]);
+        // }
+        // var firstValue = array[0];
+        // document.write(firstValue)
+
+
+
+
+            // Hàm push (thêm phần tử vào mảng)
+
+        // var array = ["code"];    
+        // array.push("gym");
+        // document.write(array);
+
+        // var students = [];
+        // var student = {
+        //     id : 1,
+        //     name:"đỗ quốc huy",
+        //     address:"Ha noi"
+        // }
+        // students.push(student);
+        // console.log(students)
+
+
+            // HÀM SPLICE (xóa 1 phần tử trong mảng)
+
+        // var array = ["code","gym","vn"];
+        // console.log(array);
+        // array.splice(1,1);
+        // console.log(array);
+
+        // var students = [
+        //     {
+        //         id:1,
+        //         name:"Đỗ Quốc Huy",
+        //         address:"Hanoi"
+        //     },
+        //     {
+        //         id:2,
+        //         name:"Đỗ Quốc Huy 23",
+        //         address:"danang"
+        //     }
+        // ]
+        // console.log(students);
+        // for(let i = 0;i < students.length;i++){
+        //     if(students[i].id == 2){
+        //         students.splice(i,1);
+        //     }
+        // }
+        // console.log(students)
+
+
+            // Hàm concat(Nối 2 mảng dữ liệu)
+
+            // var a = ["code"];
+            // var b = ["gym"];
+            // var c = a.concat(b);
+            // console.log(c)
+
+
+            // var array = [
+            //     {
+            //         id:1,
+            //         name:"huy"
+
+            //     },
+            //     {
+            //         id:2,
+            //         name:"ok"
+
+            //     }
+            // ]
+            // var array2 = [
+            //     {
+            //         id:3,
+            //         name:"huy3"
+
+            //     },
+            //     {
+            //         id:4,
+            //         name:"ok"
+            //     }
+            // ]
+            // var newArray = array.concat(array2);
+            // console.log(newArray)
+
+
+                // HÀM INDEXOF(lấy ra vị trí trong chuỗi hay mảng)
+
+            // var a = "codegym.vn";
+            // var index = a.indexOf("g");
+            // console.log(index)
+
+
+            // var numbers = [1,2,5,8,4];
+            // var a = numbers.indexOf(5);
+            // console.log(a);
+
+
+                // HÀM MAP(thay đổi thuộc tính của các phần tử trong mảng)
+
+            const huy = [
+                {
+                    "id":1,
+                    "name": "cat",
+                    "size": "small"
+                },
+                {
+                    "id":2,
+                    "name": "dog",
+                    "size": "small"
+                }
+            ]
+            var newHuy = huy.map(function(huy) {
+                if(huy.id == 1){
+                    huy.name = "python"
+                }
+                return huy;
+            });
+            console.log(newHuy)
+    </script>
+</body>
+</html>

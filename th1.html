@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding: 50px;
+    }
+</style>
+<body>
+    <header><b>Sample Screen:</b></header>
+    <input type="text" name="" id="nhapValue">
+    <input type="button" value="Add" id="btnAdd" onclick="add_element()">
+    <input onmouseover="mouseover()" type="button" value="Display" id="btnDisplay" onclick="display_array()">
+    <div id="Result"></div>
+</body>
+</html>
+<script>
+    let x = 0;
+    let array = Array();
+    function mouseover(){
+        document.getElementById("btnDisplay").style.color="blue";
+    }
+    function add_element(){
+        array[x] = document.getElementById("nhapValue").value;
+        alert("element :" + array[x] + " Added at index " + x);
+        x++;
+        document.getElementById("nhap").value = "";
+    }
+    function display_array(){
+        let e = "<hr/>"
+        for(let i = 0; i < array.length; i++){
+            e += "Element " + i + " = " + array[i] + "<br/>";
+        }
+        document.getElementById("Result").innerHTML = e ;
+    }
+</script>
